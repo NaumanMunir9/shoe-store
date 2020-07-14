@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
+import RouteConfig from "./Route";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <RouteConfig />
     </div>
   );
 };
