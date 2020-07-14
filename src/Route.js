@@ -4,11 +4,13 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import ProductItem from "./components/ProductItem";
+import Navbar from "./Navbar";
 
 const RouteConfig = () => {
   return (
     <div>
       <Router>
+        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
