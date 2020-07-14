@@ -1,3 +1,22 @@
 * {
   margin: 0;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.productContainer {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.productContainer > div {
+  box-shadow: 0 0 10px rgb(255, 213, 193);
+}
+
+.productContainer > div:hover {
+  box-shadow: 0 0 10px rgb(255, 172, 134);
 }
