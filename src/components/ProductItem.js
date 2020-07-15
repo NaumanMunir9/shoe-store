@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Shoes from "./../shoes.json";
+import "./productItem.css";
 
 const ProductItem = () => {
   const { id } = useParams();
@@ -13,9 +14,9 @@ const ProductItem = () => {
   return (
     <div>
       <h1>Hello from Product Item</h1>
-      <div className="link">
+      <div className="shoe-img">
         <h2>{shoe.name}</h2>
-        <img src={shoe.img} alt="shoe-pair" height={300} />
+        <img src={shoe.img} alt="shoe-pair" height={200} />
       </div>
     </div>
   );

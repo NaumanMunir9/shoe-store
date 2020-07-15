@@ -1,0 +1,25 @@
+* {
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.shoe-img {
+  box-shadow: 0 0 10px rgb(255, 213, 193);
+  margin: 5rem;
+  align-items: center;
+  display: inline-flex;
+}
+
+.shoe-img:hover {
+  box-shadow: 0 0 10px rgb(255, 172, 134);
+}
+
+.text-size {
+  size: 50px;
+  text-transform: capitalize;
+}
+
+.shoe-img > h2 {
+  font-size: 20px;
+}
