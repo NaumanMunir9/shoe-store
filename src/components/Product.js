@@ -1,5 +1,6 @@
 import React from "react";
 import Shoes from "./../shoes.json";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   return (
@@ -9,10 +10,10 @@ const Product = () => {
         {Object.keys(Shoes).map((keyName) => {
           const shoe = Shoes[keyName];
           return (
-            <div key={keyName}>
+            <Link key={keyName} className="link" to={`/product/${keyName}`}>
               <h2>{shoe.name}</h2>
               <img src={shoe.img} alt="shoe-pair" height={150} />
-            </div>
+            </Link>
           );
         })}
       </div>
